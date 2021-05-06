@@ -138,7 +138,6 @@ app.all('/public/*', (req,res, next) => {
 
 
 // server
-const port = process.env.PORT || 4000;
-app.listen(port, function() => {
-    console.log('Server is running at port ${port}');
+app.listen(process.env.PORT | PORT,() => {
+    console.log('Server is running at port ${PORT}');
   });
