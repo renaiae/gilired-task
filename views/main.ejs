@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Giliran Desain">
+    <meta name="author" content="Ren">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://renaiae.herokuapp.com/">
+    <meta property="og:title" content="Giliran Desain">
+    <meta property="og:image" content="img/logo.svg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://renaiae.herokuapp.com/">
+    <meta property="twitter:title" content="Giliran Desain">
+    <meta property="twitter:image" content="img/logo.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Title -->
+    <title>Giliran Desain</title>
+    <link rel="icon" type="image/png" href="img/logo.svg">
+  </head>
+  <body style="background-color:moccasin;">
+    <!-- {{!-- login --}} -->
+    <div class="container" style="height: 100vh">
+      <div id="App-header">
+        <img src="img/logo.png" id="App-logo" alt="logo"/>
+        <p style="text-align: center; padding-top: 20px;">
+          Giliran yang bikin desain gaes, kalo kelar jangan lupa klik tombolnyaaa :DD
+        </p>
+        <Checkboxes/>
+        <div id="anggota">
+          <div class="card">
+            <div class="card-body d-flex">
+              <%= patamo %>
+              <button type="button" class="btn btn-success ml-auto" id="kelar"><i class="fas fa-check" id="icon_kelar"></i> Kelar</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body" id="nextgiliran"><%= kaduo %></div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <%= katigo %>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <%= kaampek %>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <%= kalimo %>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <%= kaanam %>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <%= katujuah %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
