@@ -2,9 +2,9 @@
   "name": "gilired-task",
   "version": "1.0.0",
   "description": "Gilaran desain siapa",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Ren",
   "license": "ISC",
