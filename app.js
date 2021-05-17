@@ -19,7 +19,7 @@ app.get('/gilired-task',(request, response) => {
     var urutan;
     fs.readFile('./urutan.txt', function(err, contents) {
         // console.log(contents.toString());
-        if (contents.toString() === "Reyhan") {
+        if (contents.includes("Reyhan")) {
             urutan = {
             patamo : "Reyhan",
             kaduo : "Rendy",
@@ -31,7 +31,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Rendy") {
+        else if (contents.includes("Rendy")) {
             urutan = {
             patamo : "Rendy",
             kaduo : "Dea",
@@ -43,7 +43,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Dea") {
+        else if (contents.includes("Dea")) {
             urutan = {
             patamo : "Dea",
             kaduo : "Ajeng",
@@ -55,7 +55,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Ajeng") {
+        else if (contents.includes("Ajeng")) {
             urutan = {
                 patamo : "Ajeng",
                 kaduo : "Nasywa",
@@ -67,7 +67,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Nasywa") {
+        else if (contents.includes("Nasywa")) {
             urutan = {
                 patamo : "Nasywa",
                 kaduo : "Ari",
@@ -79,7 +79,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Ari") {
+        else if (contents.includes("Ari")) {
             urutan = {
                 patamo : "Ari",
                 kaduo : "Thariq",
@@ -91,7 +91,7 @@ app.get('/gilired-task',(request, response) => {
             }
             response.render('main', {patamo:urutan.patamo, kaduo:urutan.kaduo, katigo:urutan.katigo, kaampek:urutan.kaampek, kalimo:urutan.kalimo, kaanam:urutan.kaanam, katujuah:urutan.katujuah});
         }
-        else if (contents.toString() === "Thariq") {
+        else if (contents.includes("Thariq")) {
             urutan = {
                 patamo : "Thariq",
                 kaduo : "Reyhan",
